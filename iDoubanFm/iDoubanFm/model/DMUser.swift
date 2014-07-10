@@ -8,13 +8,13 @@
 
 import Foundation
 class DMUser {
-    var user_name:String?
-    var email:String?
-    var user_id:String?
-    var token:String?
+    var user_name:NSString?
+    var email:NSString?
+    var user_id:NSString?
+    var token:NSString?
     var expire:Int32
     
-    init(name:String,email:String,user_id:String,token:String,expire:Int32) {
+    init(name:NSString,email:NSString,user_id:NSString,token:NSString,expire:Int32) {
         self.user_name = name
         self.email = email
         self.user_id = user_id

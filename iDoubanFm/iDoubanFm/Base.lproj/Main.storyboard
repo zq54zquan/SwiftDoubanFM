@@ -22,6 +22,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47" y="139"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="KBK-Hp-fCK">
+            <objects>
+                <viewController id="NjC-57-c5s" customClass="DFLoginViewController" customModule="iDoubanFm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ctV-7d-elB"/>
+                        <viewControllerLayoutGuide type="bottom" id="5yz-xf-Sgw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SZW-Sh-jqx">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4p8-Or-GgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="139"/>
         </scene>
     </scenes>
 </document>

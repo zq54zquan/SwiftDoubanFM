@@ -23,7 +23,7 @@ class DFButton: UIButton {
     func showTime(displayLink:CADisplayLink){
         if(time==0){
             self.cancelCountDown();
-            if delegate != nil {
+            if delegate {
                 delegate!.timeOver();
             }
         }

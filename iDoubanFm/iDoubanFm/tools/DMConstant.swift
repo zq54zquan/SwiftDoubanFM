@@ -17,3 +17,6 @@ let DOUBANDOMAIN = "http://www.douban.com/"
 let LOGINPATH = "j/app/login"
 let CHANNELPATH = "j/app/radio/channels"
 let SONGSPATH = "j/app/radio/people"
+
+let FMDOMAIN = "http://douban.fm/"
+let RECENTCHANNELPATH = "j/explore/recent_chls"

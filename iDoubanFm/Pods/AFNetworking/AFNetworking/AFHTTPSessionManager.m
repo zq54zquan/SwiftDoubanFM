@@ -114,8 +114,9 @@
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:@"GET" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:nil];
-
+    NSLog(@"%@",request.allHTTPHeaderFields);
     __block NSURLSessionDataTask *task = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+        
         if (error) {
             if (failure) {
                 failure(task, error);

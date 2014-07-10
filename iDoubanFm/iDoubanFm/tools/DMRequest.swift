@@ -9,13 +9,13 @@
 import Foundation
 class DMRequest {
     var requestManager:AFHTTPSessionManager;
-    
-    class func shareInstance()->(DMRequest) {
-        struct OneceManager {
-            static var once:dispatch_once_t = 0;
-            static var request:DMRequest? = nil;
-        }
-        dispatch_once(&OneceManager.once, {
+    struct OneceManager {
+        static var once:dispatch_once_t = 0;
+        static var request:DMRequest? = nil;
+    }
+
+    class var shareInstance:DMRequest {
+            dispatch_once(&OneceManager.once, {
             var requestManager = AFHTTPSessionManager();
             requestManager.requestSerializer = AFJSONRequestSerializer();
             requestManager.responseSerializer = AFJSONResponseSerializer();
@@ -29,38 +29,45 @@ class DMRequest {
     }
     
     
-    func getRequestWithHost(host:String,path:String, param:NSDictionary,successHandle:((AnyObject?)->Void)?,errorHandler:((NSError!)->Void)?) {
+    func getRequestWithHost(host:String,path:String?, param:NSDictionary?,successHandle:((AnyObject?)->Void)?,errorHandler:((NSError!)->Void)?) {
+        var URL:NSString
+        if path {
+            URL = host.stringByAppendingPathComponent(path!);
 
-        var URL:NSURL = NSURL(string: host.stringByAppendingPathComponent(path));
+        }else {
+            URL = host
+        }
         
         func handleResponse(task:NSURLSessionDataTask!, response:AnyObject!) -> Void {
-            var error:NSError?;
-            println(response)
-
             if let dic:NSDictionary = response as? NSDictionary{
-                if dic.valueForKey("err") as NSString == "ok"{
-                    
+                if successHandle {
+                    successHandle!(dic);
                 }
             }
         }
         
         func handleError(task:NSURLSessionDataTask!, error:NSError!) -> Void {
             println(error.localizedDescription);
-            errorHandler!(error);
+            if errorHandler {
+                errorHandler!(error);
+            }
         }
         
         
-        self.requestManager.GET(host.stringByAppendingString(path), parameters: param, success: (handleResponse), failure: (handleError));
+        self.requestManager.GET(URL, parameters: param, success: (handleResponse), failure: (handleError));
         
     }
     
-    func postRequestWithHost(host:String,path:String, param:NSDictionary,successHandle:((AnyObject?)->Void)?,errorHandler:((NSError!)->Void)?) {
+    func postRequestWithHost(host:String,path:String, param:NSDictionary?,successHandle:((AnyObject?)->Void)?,errorHandler:((NSError!)->Void)?) {
         
         var URL:NSURL = NSURL(string: host.stringByAppendingPathComponent(path));
         
         func handleResponse(task:NSURLSessionDataTask!, response:AnyObject!) -> Void {
-            println(response);
-            
+            if let dic:NSDictionary = response as? NSDictionary{
+                if successHandle {
+                    successHandle!(dic);
+                }
+            }
         }
         
         func handleError(task:NSURLSessionDataTask!, error:NSError!) -> Void {

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8A0FAB4B196BC59200969768 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FAB4A196BC59200969768 /* DMUser.swift */; };
+		8A0FAB4D196BCA7300969768 /* DFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FAB4C196BCA7300969768 /* DFLoginViewController.swift */; };
+		8A0FAB4F196BCC5500969768 /* DMLoginRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FAB4E196BCC5500969768 /* DMLoginRequestModule.swift */; };
+		8A0FAB51196BCD6300969768 /* DMBaseRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FAB50196BCD6300969768 /* DMBaseRequestModule.swift */; };
+		8A303441196E2AF200F01969 /* DMChannelRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A303440196E2AF200F01969 /* DMChannelRequestModule.swift */; };
+		8A303443196E2BFE00F01969 /* DMChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A303442196E2BFE00F01969 /* DMChannel.swift */; };
 		8A73B0D91962581C00628077 /* DMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73B0D81962581C00628077 /* DMRequest.swift */; };
 		8A73B0DB196258D200628077 /* DMConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73B0DA196258D200628077 /* DMConstant.swift */; };
 		8A73B0DD19625CF000628077 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73B0DC19625CF000628077 /* AudioToolbox.framework */; };
@@ -17,10 +22,14 @@
 		8AB96CEE195D002900B11766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB96CEC195D002900B11766 /* Main.storyboard */; };
 		8AB96CF0195D002900B11766 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB96CEF195D002900B11766 /* Images.xcassets */; };
 		8AB96CFC195D002900B11766 /* iDoubanFmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB96CFB195D002900B11766 /* iDoubanFmTests.swift */; };
+		8AEE174E196E6FFA00B434D6 /* DMFMRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE174D196E6FFA00B434D6 /* DMFMRequestModule.swift */; };
+		8AEE1752196E8C5100B434D6 /* DMSongRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1751196E8C5100B434D6 /* DMSongRequestModule.swift */; };
 		8AEEEE94195D09CE00A97FCC /* DFSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEEE93195D09CE00A97FCC /* DFSongViewController.swift */; };
 		8AEEEE96195D0A2500A97FCC /* DMSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEEE95195D0A2500A97FCC /* DMSong.swift */; };
 		8AEEEE98195D1AE700A97FCC /* DFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEEE97195D1AE700A97FCC /* DFButton.swift */; };
 		8AEEEE9A195D1B8D00A97FCC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEEEE99195D1B8D00A97FCC /* QuartzCore.framework */; };
+		8AF0C4D6196E600B003C3783 /* DMCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0C4D5196E600B003C3783 /* DMCollection.swift */; };
+		8AF0C4D8196E6677003C3783 /* DMCollectionRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */; };
 		C82C29DB82DC4327958015E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C047201C3349489CB1280A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +46,11 @@
 /* Begin PBXFileReference section */
 		70C047201C3349489CB1280A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0FAB4A196BC59200969768 /* DMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
+		8A0FAB4C196BCA7300969768 /* DFLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFLoginViewController.swift; sourceTree = "<group>"; };
+		8A0FAB4E196BCC5500969768 /* DMLoginRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLoginRequestModule.swift; sourceTree = "<group>"; };
+		8A0FAB50196BCD6300969768 /* DMBaseRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMBaseRequestModule.swift; sourceTree = "<group>"; };
+		8A303440196E2AF200F01969 /* DMChannelRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMChannelRequestModule.swift; sourceTree = "<group>"; };
+		8A303442196E2BFE00F01969 /* DMChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMChannel.swift; sourceTree = "<group>"; };
 		8A34ADA3196398C10045B6F5 /* iDoubanFm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDoubanFm-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A73B0D81962581C00628077 /* DMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMRequest.swift; sourceTree = "<group>"; };
 		8A73B0DA196258D200628077 /* DMConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMConstant.swift; sourceTree = "<group>"; };
@@ -51,10 +65,14 @@
 		8AB96CF5195D002900B11766 /* iDoubanFmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDoubanFmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB96CFA195D002900B11766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB96CFB195D002900B11766 /* iDoubanFmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDoubanFmTests.swift; sourceTree = "<group>"; };
+		8AEE174D196E6FFA00B434D6 /* DMFMRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMFMRequestModule.swift; sourceTree = "<group>"; };
+		8AEE1751196E8C5100B434D6 /* DMSongRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSongRequestModule.swift; sourceTree = "<group>"; };
 		8AEEEE93195D09CE00A97FCC /* DFSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFSongViewController.swift; sourceTree = "<group>"; };
 		8AEEEE95195D0A2500A97FCC /* DMSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSong.swift; sourceTree = "<group>"; };
 		8AEEEE97195D1AE700A97FCC /* DFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFButton.swift; sourceTree = "<group>"; };
 		8AEEEE99195D1B8D00A97FCC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8AF0C4D5196E600B003C3783 /* DMCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCollection.swift; sourceTree = "<group>"; };
+		8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCollectionRequestModule.swift; sourceTree = "<group>"; };
 		E12E4676AFE047C080CAE229 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8AEEEE93195D09CE00A97FCC /* DFSongViewController.swift */,
+				8A0FAB4C196BCA7300969768 /* DFLoginViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -156,8 +175,14 @@
 			isa = PBXGroup;
 			children = (
 				8A73B0D81962581C00628077 /* DMRequest.swift */,
+				8AEE1751196E8C5100B434D6 /* DMSongRequestModule.swift */,
 				8A73B0DA196258D200628077 /* DMConstant.swift */,
 				8A34ADA3196398C10045B6F5 /* iDoubanFm-Bridging-Header.h */,
+				8A0FAB4E196BCC5500969768 /* DMLoginRequestModule.swift */,
+				8A0FAB50196BCD6300969768 /* DMBaseRequestModule.swift */,
+				8A303440196E2AF200F01969 /* DMChannelRequestModule.swift */,
+				8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */,
+				8AEE174D196E6FFA00B434D6 /* DMFMRequestModule.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -167,6 +192,8 @@
 			children = (
 				8AEEEE95195D0A2500A97FCC /* DMSong.swift */,
 				8A0FAB4A196BC59200969768 /* DMUser.swift */,
+				8A303442196E2BFE00F01969 /* DMChannel.swift */,
+				8AF0C4D5196E600B003C3783 /* DMCollection.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -323,12 +350,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEE1752196E8C5100B434D6 /* DMSongRequestModule.swift in Sources */,
+				8A0FAB51196BCD6300969768 /* DMBaseRequestModule.swift in Sources */,
+				8A303443196E2BFE00F01969 /* DMChannel.swift in Sources */,
+				8AF0C4D8196E6677003C3783 /* DMCollectionRequestModule.swift in Sources */,
 				8A73B0D91962581C00628077 /* DMRequest.swift in Sources */,
 				8AB96CEB195D002900B11766 /* ViewController.swift in Sources */,
+				8AEE174E196E6FFA00B434D6 /* DMFMRequestModule.swift in Sources */,
+				8A0FAB4F196BCC5500969768 /* DMLoginRequestModule.swift in Sources */,
+				8A303441196E2AF200F01969 /* DMChannelRequestModule.swift in Sources */,
+				8AF0C4D6196E600B003C3783 /* DMCollection.swift in Sources */,
 				8AB96CE9195D002900B11766 /* AppDelegate.swift in Sources */,
 				8A73B0DB196258D200628077 /* DMConstant.swift in Sources */,
 				8AEEEE98195D1AE700A97FCC /* DFButton.swift in Sources */,
 				8AEEEE94195D09CE00A97FCC /* DFSongViewController.swift in Sources */,
+				8A0FAB4D196BCA7300969768 /* DFLoginViewController.swift in Sources */,
 				8AEEEE96195D0A2500A97FCC /* DMSong.swift in Sources */,
 				8A0FAB4B196BC59200969768 /* DMUser.swift in Sources */,
 			);
