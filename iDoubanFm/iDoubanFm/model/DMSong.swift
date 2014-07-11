@@ -16,7 +16,7 @@ class DMSong {
     let company:String
     let title:String
     let rating_avg:Float
-    let length:Float
+    let length:Int
     let subtype:String
     let public_time:String
     let sid:Int
@@ -25,7 +25,26 @@ class DMSong {
     let kbps:Int
     let albumtitle:String
     var like:Bool
-    init (picture:String,album:String,ssid:String,artist:String,url:String,company:String,title:String,rating_avg:Float,length:Float,subtype:String,public_time:String,sid:Int,aid:Int,sha256:String,kbps:Int,albumtitle:String,like:Bool){
+    init (songDic:NSDictionary){
+        var aid = (songDic["aid"] as? NSString)?.integerValue
+        var album = songDic["album"] as String
+        var albumtitle = songDic["albumtitle"] as String
+        var artist = songDic["artist"] as String
+        var company = songDic["company"] as String
+        var kbps = (songDic["kbps"] as NSString).integerValue
+        var length = (songDic["length"] as NSNumber).integerValue
+        var like = (songDic["like"] as NSNumber).integerValue != 0
+        var picture = songDic["picture"] as String
+        var public_time = songDic["public_time"] as String
+        var rating_avg = (songDic["rating_avg"] as NSNumber).floatValue;
+        var sha256 = songDic["sha256"] as String
+        var sid = (songDic["sid"] as NSString).integerValue
+        var songlists_count = (songDic["songlists_count"] as NSNumber).integerValue
+        var ssid = songDic["ssid"] as String
+        var subtype = songDic["subtype"] as String
+        var title = songDic["title"] as String
+        var url = songDic["url"] as String
+        
         self.picture = picture
         self.album = album
         self.ssid = ssid
@@ -38,7 +57,7 @@ class DMSong {
         self.subtype = subtype
         self.public_time = public_time
         self.sid = sid
-        self.aid = aid
+        self.aid = aid!
         self.sha256 = sha256
         self.kbps = kbps
         self.albumtitle = albumtitle

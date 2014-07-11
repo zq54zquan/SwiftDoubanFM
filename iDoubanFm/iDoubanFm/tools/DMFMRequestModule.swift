@@ -9,15 +9,16 @@
 import Foundation
 func requestDM() {
     showCookies();
-    println("-------------------")
-    DMRequest.shareInstance.getRequestWithHost(FMDOMAIN, path: "blank", param: nil, successHandle: {(_:AnyObject?) -> Void in
+   
+    DMRequest.shareInstance.getRequestWithHost(FMDOMAIN, path:nil, param: nil, successHandle: {(_:AnyObject?) -> Void in
         showCookies()
         }, errorHandler:{(_:NSError!)->Void in
         showCookies()
-        });
+    });
 }
 
 func showCookies() {
+     println("-------------------")
     var cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies
     for cookie in cookies {
         if cookie as? NSHTTPCookie {

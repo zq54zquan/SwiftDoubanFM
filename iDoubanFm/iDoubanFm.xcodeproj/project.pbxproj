@@ -30,6 +30,7 @@
 		8AEEEE9A195D1B8D00A97FCC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEEEE99195D1B8D00A97FCC /* QuartzCore.framework */; };
 		8AF0C4D6196E600B003C3783 /* DMCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0C4D5196E600B003C3783 /* DMCollection.swift */; };
 		8AF0C4D8196E6677003C3783 /* DMCollectionRequestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */; };
+		A9D30459196FB5B300AFEFEA /* DMRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D30458196FB5B300AFEFEA /* DMRadio.swift */; };
 		C82C29DB82DC4327958015E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C047201C3349489CB1280A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		8AEEEE99195D1B8D00A97FCC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8AF0C4D5196E600B003C3783 /* DMCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCollection.swift; sourceTree = "<group>"; };
 		8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCollectionRequestModule.swift; sourceTree = "<group>"; };
+		A9D30458196FB5B300AFEFEA /* DMRadio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMRadio.swift; sourceTree = "<group>"; };
 		E12E4676AFE047C080CAE229 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 				8A303440196E2AF200F01969 /* DMChannelRequestModule.swift */,
 				8AF0C4D7196E6677003C3783 /* DMCollectionRequestModule.swift */,
 				8AEE174D196E6FFA00B434D6 /* DMFMRequestModule.swift */,
+				A9D30458196FB5B300AFEFEA /* DMRadio.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				8AEEEE94195D09CE00A97FCC /* DFSongViewController.swift in Sources */,
 				8A0FAB4D196BCA7300969768 /* DFLoginViewController.swift in Sources */,
 				8AEEEE96195D0A2500A97FCC /* DMSong.swift in Sources */,
+				A9D30459196FB5B300AFEFEA /* DMRadio.swift in Sources */,
 				8A0FAB4B196BC59200969768 /* DMUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

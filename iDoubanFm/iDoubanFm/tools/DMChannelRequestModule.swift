@@ -34,7 +34,6 @@ class DMChannelRequestModule:DMBaseRequestModuel {
                         }
                         
                         var channel = DMChannel(name: channelDic["name"] as? NSString, seq_id:seq_id, abbr_en: channelDic["abbr_en"] as? NSString, channel_id: Int(channel_id), name_en: channelDic["name_en"] as? NSString)
-                        println("\(channel.name),\(channel.seq_id),\(channel.abbr_en),\(channel.channel_id),\(channel.name_en)")
                         channelArray.append(channel);
                     }
                 }

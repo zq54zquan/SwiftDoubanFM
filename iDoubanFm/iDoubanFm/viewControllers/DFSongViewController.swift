@@ -8,11 +8,10 @@
 
 import UIKit
 
-class DFSongViewController: UIViewController,DFButtonDelegate,STKAudioPlayerDelegate{
+class DFSongViewController: UIViewController,DFButtonDelegate{
     var song:DMSong? = nil;
     var thumbView:UIImageView? = nil
     var titleLabel:UILabel? = nil
-    var player:STKAudioPlayer!;
     var songs:Array<DMSong>?;
     var channel:DMChannel?
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -49,7 +48,7 @@ class DFSongViewController: UIViewController,DFButtonDelegate,STKAudioPlayerDele
         
         self.view.addSubview(leftButton)
         self.view.addSubview(rightButton);
-        requestDM()
+        
 //        let loginRequestModule = DMLoginRequestModule();
 //        loginRequestModule.requestWithMethod(HTTPMETHOD.GET, host: DOUBANDOMAIN, path: LOGINPATH, param: ["email":"zq54zquan@gmail.com","password":"7991205aa","app_name":"radio_desktop_win","version":"100"]);
 //        
@@ -60,22 +59,24 @@ class DFSongViewController: UIViewController,DFButtonDelegate,STKAudioPlayerDele
 //        channelRequestModuel.handleChannels = {(channels:Array<DMChannel>?)->Void in
 //            if (channels!.endIndex) != 0 {
 //                self.channel = channels![0]
-//                
 //            }
 //        }
 //        channelRequestModuel.requestWithMethod(HTTPMETHOD.GET, host: DOUBANDOMAIN, path: CHANNELPATH, param: nil)
-//        
-//        let songRequestChannel = DMSongRequestModule()
 //
-        self.player = STKAudioPlayer();
-        self.player.delegate = self;
-        self.player.queueURL(NSURL(string: "http://mr4.douban.com/201407091119/7b7312cdb285a103d463c106016f3146/view/song/small/p1451184.mp3"), withQueueItemId: "123")
+//        let songRequestChannel = DMSongRequestModule()
+        
+        DMRadio.shareInstance().playNext()
+//
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
     
     func timeOver() {
         println("finishStart");
@@ -100,32 +101,6 @@ class DFSongViewController: UIViewController,DFButtonDelegate,STKAudioPlayerDele
         
     }
     
-    func audioPlayer(audioPlayer: STKAudioPlayer!, didStartPlayingQueueItemId queueItemId: NSObject!) {
-        println(queueItemId);
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, didFinishBufferingSourceWithQueueItemId queueItemId: NSObject!) {
-    
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, didFinishPlayingQueueItemId queueItemId: NSObject!, withReason stopReason: STKAudioPlayerStopReason, andProgress progress: CDouble, andDuration duration: CDouble) {
-    
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, stateChanged state: STKAudioPlayerState, previousState: STKAudioPlayerState) {
-    
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, unexpectedError errorCode: STKAudioPlayerErrorCode) {
-    
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, logInfo line:NSString) {
-        println(line);
-    }
-    
-    func audioPlayer(audioPlayer: STKAudioPlayer!, didCancelQueuedItems queueItems:NSArray) {
-    
-    }
+
 
 }

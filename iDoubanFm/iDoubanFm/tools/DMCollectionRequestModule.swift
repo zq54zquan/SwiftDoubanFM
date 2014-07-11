@@ -14,8 +14,8 @@ class DMCollectionRequestModule:DMBaseRequestModuel {
     init() {
         super.init(successHandle: {(result: AnyObject?) -> Void in
             println(result)
-            var cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookiesForURL(NSURL(string: FMDOMAIN))
-            println(cookies)
+//            var cookies = NSHTTPCookieStorage.sharedHTTPCookieStorage().cookiesForURL(NSURL(string: FMDOMAIN))
+//            println(cookies)
 
             if let resultDic = result as? NSDictionary {
                 if resultDic["status"] {
